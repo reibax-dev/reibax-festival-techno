@@ -1,0 +1,17 @@
+@use 'base/variables' as v;
+
+.footer {
+
+    background-color: v.$morado;
+    padding: 1rem 0 ;
+    font-family: v.$fuente_techno;
+    text-align: center;
+    font-size: 2.5rem;
+
+    &-copyrigth {
+        margin: 0;
+    }
+
+
+
+}

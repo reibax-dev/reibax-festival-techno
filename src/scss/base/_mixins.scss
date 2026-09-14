@@ -1,0 +1,38 @@
+@use 'base/variables' as v;
+
+@mixin iphone {
+    @media (min-width:v.$iphone) {
+        @content;
+    }
+} 
+@mixin ipad {
+    @media (min-width:v.$ipad) {
+        @content;
+    }
+} 
+@mixin pc {
+    @media (min-width:v.$pc) {
+        @content;
+    }
+} 
+@mixin pcXL {
+    @media (min-width:v.$pcXL) {
+        @content;
+    }
+} 
+@mixin contenedor {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+@mixin grid ($columnas: 1, $gap : 5rem) {
+    display: grid;
+    grid-template-columns: repeat($columnas, 1fr);
+    gap: $gap;
+}
+@mixin lista {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}

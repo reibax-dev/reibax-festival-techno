@@ -1,0 +1,77 @@
+
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.lineup {
+    background: linear-gradient(to bottom, v.$negro 0% , v.$rojo 50%, v.$negro 100% );
+
+    h3, 
+    .dia {
+        font-family: v.$fuente_ink;
+        text-align: center;
+        color: v.$blanco;
+        
+    }
+    .dia {
+        font-family: v.$fuente_principal;
+        font-size: 4rem;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}
+.escenarios-contenedor {
+    @include m.contenedor;
+    @include m.ipad { 
+        @include m.grid(2);
+
+    }
+}
+.escenario {
+    padding-top: 2rem;
+    .nombre-escenario {
+        font-size: 3rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+    }
+}
+.calendario {
+    @include m.lista ;
+    
+    li {
+        padding: 2.5rem;
+        font-weight: bold;
+        span {
+            font-weight: 400;
+            font-family: v.$fuente_techno;
+            font-size: 3rem;
+        }
+    
+    transition-property: transform;
+    transition-duration: 300ms;
+
+        &:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+         } 
+    }       
+}
+.bg-rosa {
+    background-color: v.$rosa;
+    li:nth-child(odd) {
+        background-color: lighten(v.$rosa, 10%);
+    }
+    li:nth-child(even) {
+        background-color: v.$rosa;
+    }
+
+}
+.bg-verde {
+    background-color: v.$verde;
+    li:nth-child(odd) {
+        background-color: lighten(v.$verde, 10%);
+    }
+    li:nth-child(even) {
+        background-color: v.$verde;
+    }
+}

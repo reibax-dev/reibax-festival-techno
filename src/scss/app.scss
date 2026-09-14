@@ -1,0 +1,5 @@
+
+// @use 'base/variables' as v;     //* con " * " no tendrias que poner " v.$..." solo "$..."
+
+@forward 'base';
+@forward 'layout';

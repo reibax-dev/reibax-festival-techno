@@ -1,0 +1,65 @@
+
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+
+.sobre-festival {
+    background: linear-gradient(to bottom, v.$rojo -50% , v.$negro 100% );
+    margin: 0;
+    max-width: auto;
+    text-align: center;
+    padding: 4rem 0;
+    // @include m.contenedor; 
+
+    @include m.pc {
+        
+        padding: 10rem 0;
+        @include m.grid(3, 4rem);
+        // display: grid;        
+        // grid-template-columns: repeat(3, 1fr);
+        // column-gap: 10rem;
+        
+        
+    .imagen {
+        grid-column: 1 / 3;
+        align-content: center;
+        transition-property: transform;
+        transition-duration: 700ms;
+        @include m.contenedor;
+        
+
+        &:hover {
+            transform: scale(1.05);
+         }
+    }
+        
+    }
+
+}
+.contenido-festival {
+    @include m.contenedor;
+    text-align: center;
+    padding: 1rem auto;
+    @include m.ipad { 
+        padding-right: 6rem;
+    }
+    
+    
+    h2 {
+        color: v.$blanco;
+        font-size: 4rem;
+        margin: 2rem auto;
+        font-family: v.$fuente_techno;
+        @include m.ipad { 
+            font-size: 6rem;
+            margin: 0;
+        }
+    }
+    .fecha {
+        color: v.$rojo;
+        font-weight: bold;
+    }
+    p {
+        color: v.$blanco;
+    }
+}

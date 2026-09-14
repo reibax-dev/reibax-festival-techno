@@ -1,0 +1,76 @@
+
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.galeria {
+    font-family: v.$fuente_ink;
+     background: linear-gradient(to bottom, v.$negro 0% , v.$rojo 100% );
+  
+
+    &-imagenes {
+        @include m.contenedor;
+        @include m.grid (1, 2rem);
+        @include m.iphone { 
+            @include m.grid (2, 2rem)
+        };
+        @include m.ipad { 
+            @include m.grid (3, 2rem)
+        };
+        @include m.pc { 
+            @include m.grid (4, 2rem)
+        };
+
+        img {
+            height: 20rem;
+            object-fit: cover;
+        };
+
+    }
+};
+.forma {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(v.$negro, 0.5);
+    display: grid;
+    place-items: center;
+
+    animation: fadeIn ease-in .5s;
+
+    &.fade-out {
+        animation: fadeOut ease-in 1s;
+    }
+
+    img {
+        max-width: 100rem;
+    }
+}
+
+.btn-cerrar {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: v.$rojo;
+    border: none;
+    color: v.$negro;
+    display: grid;
+    place-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

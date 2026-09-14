@@ -1,0 +1,26 @@
+@use 'base/variables' as v;
+
+// Estilos para la caja contenedora
+
+
+.audio {
+    background: linear-gradient(to bottom, v.$negro 0% , v.$rojo 150% );
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:  0;
+    position: relative;
+    z-index: 100;
+   
+}
+
+.audio audio {
+    display: block !important;
+    width: 30rem;
+    height: 5rem;
+    background-color: #1a1a1a;
+    border-radius: 3rem;
+    box-shadow: 0 1rem 1.5rem rgba(255, 0, 128, 0.4);
+    outline: none;
+}
