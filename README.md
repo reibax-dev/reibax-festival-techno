@@ -1,4 +1,12 @@
-![Estático](https://img.shields.io/badge/Festival-Techno-red)
+🇹🇭 ![Estático](https://img.shields.io/badge/Festival-Techno-red) 🇹🇭
+
+![Con logo](https://img.shields.io/badge/Git-2.45-F05032?style=for-the-badge&logo=git&logoColor=white)
+
+![Workflow](https://img.shields.io/github/actions/workflow/status/reibax-dev/reibax-festival-techno/ci.yml)
+![Release](https://img.shields.io/github/v/release/reibax-dev/reibax-festival-techno)
+![Issues](https://img.shields.io/github/issues/reibax-dev/reibax-festival-techno)
+![Último commit](https://img.shields.io/github/last-commit/reibax-dev/reibax-festival-techno)
+![Licencia](https://img.shields.io/github/license/reibax-dev/reibax-festival-techno)
 
 
 # 🎵 DJ Music Festival - Sitio Web Interactivo y Automatizado
