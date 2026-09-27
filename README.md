@@ -1,9 +1,9 @@
+![Estático](https://img.shields.io/badge/Festival-Techno-red)
+
+
 # 🎵 DJ Music Festival - Sitio Web Interactivo y Automatizado
 
-[![HTML5](https://shields.io)](https://mozilla.org)
-[![Sass](https://shields.io)](https://sass-lang.com)
-[![JavaScript](https://shields.io)](https://mozilla.org)
-[![Gulp](https://shields.io)](https://gulpjs.com)
+## **HTML5  ___   Css   ___    Sass   ___    JavaScript   ___    Gulp**
 
 ¡Bienvenidos a mi primer repositorio avanzado de desarrollo Frontend! Este proyecto representa un paso clave en mi aprendizaje, siendo el primero donde integro elementos multimedia dinámicos como **Video de fondo** y un **Reproductor de Audio nativo**, controlados y optimizados mediante flujos de desarrollo modernos.
 
