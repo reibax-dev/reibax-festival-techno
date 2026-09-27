@@ -6,7 +6,7 @@
 ![Release](https://img.shields.io/github/v/release/reibax-dev/reibax-festival-techno)
 ![Issues](https://img.shields.io/github/issues/reibax-dev/reibax-festival-techno)
 ![Último commit](https://img.shields.io/github/last-commit/reibax-dev/reibax-festival-techno)
-![Licencia](https://img.shields.io/github/license/reibax-dev/reibax-festival-techno(!cacheSeconds=60))
+![Licencia](https://img.shields.io/github/license/reibax-dev/reibax-festival-techno?cacheSeconds=60)
 
 
 # 🎵 DJ Music Festival - Sitio Web Interactivo y Automatizado
